@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sehyeon Kim | 포트폴리오</title>
+<meta name="description" content="김세현(Sehyeon Kim)의 소프트웨어 엔지니어 포트폴리오입니다.">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <nav class="nav container">
+    <a href="#top" class="logo">Sehyeon Kim</a>
+    <button class="nav-toggle" id="navToggle" aria-label="메뉴 열기" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="#about">소개</a></li>
+      <li><a href="#skills">기술</a></li>
+      <li><a href="#education">학력</a></li>
+      <li><a href="#certifications">자격증</a></li>
+      <li><a href="#projects">프로젝트</a></li>
+      <li><a href="#experience">경력</a></li>
+      <li><a href="#activities">활동</a></li>
+      <li><a href="#global">해외 경험</a></li>
+    </ul>
+  </nav>
+</header>
+
+<main>
+
+  <section id="top" class="hero container">
+    <div class="hero-content">
+      <p class="hero-eyebrow">안녕하세요 👋</p>
+      <h1>김세현 — <span class="accent">소프트웨어 엔지니어</span> 입니다.</h1>
+      <ul class="hero-contact">
+        <li>연락처 : <a href="tel:010-2267-3234">010-2267-3234</a></li>
+        <li>이메일 : <a href="mailto:sehyeonkim09@gmail.com">sehyeonkim09@gmail.com</a></li>
+        <li>깃허브 : <a href="https://github.com/chadoli27" target="_blank" rel="noopener">chadoli27</a></li>
+      </ul>
+      <div class="hero-cta">
+        <a href="#projects" class="btn btn-primary">프로젝트 보기</a>
+      </div>
+    </div>
+  </section>
+
+  <section id="about" class="section container">
+    <h2 class="section-title">소개</h2>
+    <p class="about-text">
+      동료들과 함께 머리를 맞대고 무언가를 뚝딱뚝딱 만들어가는 과정이 가장 즐겁습니다.
+      낯선 기술이나 새로운 도구 앞에서도 일단 부딪혀보며 내 것으로 만드는 과정을 즐깁니다.
+      한국항공대학교 소프트웨어공학과에서 다양한 기술 스택을 접하며 신나게 개발의 재미를 알아가고 있어요.
+      요즘은 프론트와 백엔드에 머물지 않고, 서비스가 살아 움직이는 인프라 영역까지 호시탐탐 기회를 엿보며 영역을 넓혀가는 중입니다!
+    </p>
+  </section>
+
+  <section id="skills" class="section container">
+    <h2 class="section-title">기술 스택</h2>
+    <ul class="skills-grid">
+      <li class="skill-item">Java</li>
+      <li class="skill-item">Spring Boot</li>
+      <li class="skill-item">JPA</li>
+      <li class="skill-item">Python</li>
+      <li class="skill-item">SQL</li>
+      <li class="skill-item">JavaScript</li>
+      <li class="skill-item">MySQL</li>
+      <li class="skill-item">Git/GitHub</li>
+      <li class="skill-item">AWS (EC2, RDS)</li>
+      <li class="skill-item">KT Cloud</li>
+    </ul>
+  </section>
+
+  <section id="education" class="section container">
+    <h2 class="section-title">학력</h2>
+    <ol class="timeline">
+      <li class="timeline-item">
+        <div class="timeline-date">2027.02 졸업 예정</div>
+        <div class="timeline-content">
+          <h3>한국항공대학교</h3>
+          <p class="timeline-role">소프트웨어공학과 학사</p>
+          <p>GPA 3.77 / 4.50 · 주요 이수 과목: 알고리즘, 데이터베이스, 소프트웨어공학, 네트워크 구조, 운영체제, 객체지향프로그래밍, 클라우드 컴퓨팅</p>
+        </div>
+      </li>
+      <li class="timeline-item">
+        <div class="timeline-date">2018.03 — 2022.01</div>
+        <div class="timeline-content">
+          <h3>경화여자고등학교</h3>
+        </div>
+      </li>
+    </ol>
+  </section>
+
+  <section id="certifications" class="section container">
+    <h2 class="section-title">자격증</h2>
+    <ol class="timeline">
+      <li class="timeline-item">
+        <div class="timeline-date">2026.09</div>
+        <div class="timeline-content">
+          <h3>TOEIC 960점</h3>
+        </div>
+      </li>
+      <li class="timeline-item">
+        <div class="timeline-date">2026.08</div>
+        <div class="timeline-content">
+          <h3>OPIc AL</h3>
+        </div>
+      </li>
+      <li class="timeline-item">
+        <div class="timeline-date">2026.03</div>
+        <div class="timeline-content">
+          <h3>SQLD (SQL 개발자 자격증)</h3>
+        </div>
+      </li>
+    </ol>
+  </section>
+
+  <section id="projects" class="section container">
+    <h2 class="section-title">프로젝트</h2>
+    <div class="project-grid">
+
+      <article class="project-card">
+        <div class="project-thumb">Ddock-terview</div>
+        <div class="project-body">
+          <h3>AI 면접 도우미 (Ddock-terview)</h3>
+          <p>
+            AI 기반 모의 면접 서비스의 백엔드 리드로 참여했습니다. ERD와 API 구조를 설계해 데이터 흐름과 시스템 효율성을 개선하고,
+            핵심 API와 주요 비즈니스 로직 대부분을 직접 구현했습니다. 프론트엔드·AI·디자인 팀과 협업하며 산학협력 프로젝트 경진대회에서 1위를 수상했습니다.
+          </p>
+          <ul class="detail-list">
+            <li>모호했던 와이어프레임 초안을 분석해 아이패드로 End-to-End 유저플로우를 직접 시각화, 팀 전체의 화면 흐름과 기능 명세를 통일해 개발 병목을 사전 차단</li>
+            <li>백엔드 경험이 없는 팀원을 위한 온보딩 워크북(ERD·CRUD·환경설정)을 제작해 1주 만에 실무 투입시키고, 전체 API 중 약 30%를 팀원이 독립적으로 구현하도록 지원</li>
+          </ul>
+          <ul class="project-tags">
+            <li>Java</li>
+            <li>Spring Boot</li>
+            <li>JPA</li>
+            <li>MySQL</li>
+          </ul>
+          <div class="project-links">
+            <a href="https://github.com/AI-interview-kau/ddock-terview-backend" target="_blank" rel="noopener">GitHub</a>
+          </div>
+        </div>
+      </article>
+
+      <article class="project-card">
+        <div class="project-thumb">English Kiosk</div>
+        <div class="project-body">
+          <h3>English Kiosk (잉키)</h3>
+          <p>
+            어린이집에 실제 배포되어 사용 중인 유아 영어 학습 서비스입니다.
+          </p>
+          <ul class="detail-list">
+            <li>Gemini API 기반 AI 에셋(이미지·오디오) 생성 및 검수 파이프라인을 구축해 주간 콘텐츠 제작 공수를 약 8시간에서 30분으로 93% 단축</li>
+            <li>Android PackageInstaller와 CI/CD(GitHub Actions, Firebase)를 연동한 무인 Silent OTA 업데이트 엔진을 구축해 태블릿 기기의 원격 자동 배포 체계 확립</li>
+          </ul>
+          <ul class="project-tags">
+            <li>Flutter</li>
+            <li>Kotlin</li>
+            <li>Gemini API</li>
+            <li>Firebase</li>
+            <li>GitHub Actions</li>
+          </ul>
+          <div class="project-links">
+            <a href="https://github.com/skim170/ENGLISH-KIOSK" target="_blank" rel="noopener">GitHub</a>
+          </div>
+        </div>
+      </article>
+
+    </div>
+  </section>
+
+  <section id="experience" class="section container">
+    <h2 class="section-title">경력</h2>
+    <ol class="timeline">
+      <li class="timeline-item">
+        <div class="timeline-date">2025.12 — 진행중</div>
+        <div class="timeline-content">
+          <h3>비틀웍스</h3>
+          <p class="timeline-role">Software Developer</p>
+          <ul class="detail-list">
+            <li>운영 중인 서비스 'Learner's High'의 신규 기능 개발과 운영 이슈 해결로 서비스 안정성과 사용성 개선 (KT Cloud, PHP/JavaScript)</li>
+            <li>학생 제출물을 분석해 교사용 가이드라인을 생성하는 비동기 2-Step AI 파이프라인을 기획부터 배포까지 신규 설계·구축</li>
+            <li>데이터/하이브리드/휴먼 중심 3단계로 분기하는 프롬프트 파이프라인을 구축해 맞춤형 학습 리포트 코멘트 자동 생성</li>
+            <li>트리거 기반 실시간 알림과 야간 배치 처리로 폴링 없이 서버 부하를 최소화하는 게이미피케이션 기능 구현</li>
+          </ul>
+        </div>
+      </li>
+    </ol>
+  </section>
+
+  <section id="activities" class="section container">
+    <h2 class="section-title">활동</h2>
+    <div class="activity-grid">
+      <div class="activity-card">
+        <h3>교내 방송부</h3>
+        <p>매주 정기 방송의 기획·녹음·편집·송출을 담당했습니다. 단계별 마감 루틴과 편집 템플릿화로 반복 업무를 효율화해 지연 없이 안정적으로 방송을 운영했습니다.</p>
+      </div>
+      <div class="activity-card">
+        <h3>글로벌 버디</h3>
+        <p>외국인 교환·유학생의 학기 정착을 1:1로 지원하며 수강신청과 졸업 이수 요건을 맞춤 안내했습니다. 담당 학생 전원의 희망 과목 수강신청 성공과 학사 자립을 이끌었습니다.</p>
+      </div>
+      <div class="activity-card">
+        <h3>영어 강사</h3>
+        <p>1:1 영어 독서 토론 수업에서 학생별 레벨에 맞춘 맞춤형 티칭으로 발화 참여도를 높였고, 업무 우선순위 리스트 공유로 동료 강사와의 협업 공백을 최소화했습니다.</p>
+      </div>
+      <div class="activity-card">
+        <h3>구름톤 유니브 캠퍼스 리더</h3>
+        <p>대학 IT 단체(항공대 지부)의 인원 모집과 운영을 리드하며 백엔드 스터디 커리큘럼(Java, Spring)을 설계하고 멤버를 멘토링했습니다. 매주 개념 퀴즈 세션과 해커톤 대비 미니 컨퍼런스를 운영했고, 여러 대학이 함께하는 교류 해커톤을 공동 기획했습니다.</p>
+      </div>
+      <div class="activity-card">
+        <h3>프로그래머스 데브코스: 클라우드 기반 백엔드 엔지니어링</h3>
+        <p>2024.07 — 2024.12 · Java, Spring Framework, SQL, AWS를 활용해 클라우드 기반 인프라를 구축하고 안정적인 웹 서버를 설계하는 백엔드 실무 교육 수료</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="global" class="section container">
+    <h2 class="section-title">해외 경험</h2>
+    <ol class="timeline">
+      <li class="timeline-item">
+        <div class="timeline-date">2023.06 — 2023.07</div>
+        <div class="timeline-content">
+          <h3>Central Queensland University</h3>
+          <p class="timeline-role">호주 · 어학연수</p>
+        </div>
+      </li>
+      <li class="timeline-item">
+        <div class="timeline-date">2019.01 — 2019.12</div>
+        <div class="timeline-content">
+          <h3>Sunway International School</h3>
+          <p class="timeline-role">말레이시아 · 교환학생</p>
+        </div>
+      </li>
+      <li class="timeline-item">
+        <div class="timeline-date">2014.03 — 2016.06</div>
+        <div class="timeline-content">
+          <h3>Bayview Middle School</h3>
+          <p class="timeline-role">캐나다 · 유학</p>
+        </div>
+      </li>
+    </ol>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <p>&copy; <span id="year"></span> Sehyeon Kim. All rights reserved.</p>
+</footer>
+
+<script src="js/script.js"></script>
+</body>
+</html>
