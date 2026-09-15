@@ -38,7 +38,6 @@
     <div class="hero-content">
       <p class="hero-eyebrow">Software Engineer</p>
       <h1>김세현<br>소프트웨어<br><span class="highlight">엔지니어</span></h1>
-      <p class="hero-subtitle">프론트엔드부터 백엔드, 인프라까지 — 서비스가 살아 움직이는 전 과정을 만듭니다.</p>
       <div class="hero-cta">
         <a href="#projects" class="btn btn-primary">프로젝트 보기 →</a>
         <a href="mailto:sehyeonkim09@gmail.com" class="btn btn-outline">이메일 보내기</a>
@@ -149,7 +148,7 @@
                 <div class="item-date">2027.02 졸업 예정</div>
                 <h4>한국항공대학교</h4>
                 <p class="item-role">소프트웨어공학과 학사</p>
-                <p>GPA 3.77 / 4.50 · 주요 이수 과목: 알고리즘, 데이터베이스, 소프트웨어공학, 네트워크 구조, 운영체제, 객체지향프로그래밍, 클라우드 컴퓨팅</p>
+                <p>GPA 3.77 / 4.50 (전공 3.93) · 주요 이수 과목: 알고리즘, 데이터베이스, 소프트웨어공학, 네트워크 구조, 운영체제, 객체지향프로그래밍, 클라우드 컴퓨팅</p>
               </li>
               <li class="simple-item">
                 <div class="item-date">2018.03 — 2022.01</div>
@@ -191,6 +190,27 @@
 
           <article class="project-card">
             <div class="project-thumb">
+              <img src="assets/잉키로고.png" alt="Engkey(잉키) 로고" loading="lazy">
+            </div>
+            <div class="project-body">
+              <div class="project-head">
+                <h3>English Kiosk (잉키)</h3>
+                <a href="https://github.com/skim170/ENGLISH-KIOSK" class="project-link" target="_blank" rel="noopener">GitHub ↗</a>
+              </div>
+              <span class="item-date">2026.02 — 진행중</span>
+              <p>
+                어린이집에 실제 배포되어 사용 중인 유아 영어 학습 서비스입니다.
+              </p>
+              <ul class="detail-list">
+                <li>Gemini API 기반 AI 에셋(이미지·오디오) 생성 및 검수 파이프라인을 구축해 주간 콘텐츠 제작 공수를 약 8시간에서 30분으로 93% 단축</li>
+                <li>Android PackageInstaller와 CI/CD(GitHub Actions, Firebase)를 연동한 무인 Silent OTA 업데이트 엔진을 구축해 태블릿 기기의 원격 자동 배포 체계 확립</li>
+              </ul>
+              <p class="project-tags">Flutter · Kotlin · Gemini API · Firebase · GitHub Actions</p>
+            </div>
+          </article>
+
+          <article class="project-card">
+            <div class="project-thumb">
               <img src="assets/똑터뷰썸네일.png" alt="Ddock-terview" loading="lazy">
             </div>
             <div class="project-body">
@@ -198,6 +218,7 @@
                 <h3>AI 면접 도우미 (Ddock-terview)</h3>
                 <a href="https://github.com/AI-interview-kau/ddock-terview-backend" class="project-link" target="_blank" rel="noopener">GitHub ↗</a>
               </div>
+              <span class="item-date">2025.09 — 2025.12</span>
               <p>
                 AI 기반 모의 면접 서비스의 백엔드 리드로 참여했습니다. ERD와 API 구조를 설계해 데이터 흐름과 시스템 효율성을 개선하고,
                 핵심 API와 주요 비즈니스 로직 대부분을 직접 구현했습니다. 프론트엔드·AI·디자인 팀과 협업하며 산학협력 프로젝트 경진대회에서 1위를 수상했습니다.
@@ -212,21 +233,23 @@
 
           <article class="project-card">
             <div class="project-thumb">
-              <img src="assets/잉키로고.png" alt="Engkey(잉키) 로고" loading="lazy">
+              <img src="assets/travelmaker-thumb.png" alt="TravelMaker" loading="lazy">
             </div>
             <div class="project-body">
               <div class="project-head">
-                <h3>English Kiosk (잉키)</h3>
-                <a href="https://github.com/skim170/ENGLISH-KIOSK" class="project-link" target="_blank" rel="noopener">GitHub ↗</a>
+                <h3>여행 일정 공유 서비스 (TravelMaker)</h3>
+                <a href="https://github.com/prgrms-web-devcourse-final-project/WEB1_2_TravelMaker_BE" class="project-link" target="_blank" rel="noopener">GitHub ↗</a>
               </div>
+              <span class="item-date">2024.11 — 2024.12</span>
               <p>
-                어린이집에 실제 배포되어 사용 중인 유아 영어 학습 서비스입니다.
+                프로그래머스 데브코스 파이널 프로젝트로 참여한 여행 일정 공유 서비스의 백엔드 개발을 담당했습니다.
+                방(Room) 생성부터 참여자 관리, 일정, 채팅까지 방 단위 협업 기능을 전방위로 구현했습니다.
               </p>
               <ul class="detail-list">
-                <li>Gemini API 기반 AI 에셋(이미지·오디오) 생성 및 검수 파이프라인을 구축해 주간 콘텐츠 제작 공수를 약 8시간에서 30분으로 93% 단축</li>
-                <li>Android PackageInstaller와 CI/CD(GitHub Actions, Firebase)를 연동한 무인 Silent OTA 업데이트 엔진을 구축해 태블릿 기기의 원격 자동 배포 체계 확립</li>
+                <li>Room 생성·조회·수정·삭제 및 랜덤 roomId·roomCode 발급, 일정(스케줄) 등록·수정 기능을 설계·구현</li>
+                <li>MemberRoom(참여자) CRUD와 강제퇴장·탈퇴 기능, 채팅 메시지 CRUD를 구현하고 로그인 연동 및 예외처리를 리팩토링</li>
               </ul>
-              <p class="project-tags">Flutter · Kotlin · Gemini API · Firebase · GitHub Actions</p>
+              <p class="project-tags">Java · Spring Boot · JPA · MySQL · Swagger</p>
             </div>
           </article>
 
