@@ -39,6 +39,16 @@
   .experience-card { padding: 20px; }
   .experience-metrics { grid-template-columns: 1fr; }
 }
+
+/* Scoped to the capstone architecture figure. */
+.fasoo-server-flow { margin: 4px 0 0; max-width: 360px; width: 100%; padding: 14px; border: 1px solid var(--border); border-radius: var(--radius-sm); background: var(--card-bg); }
+.fasoo-server-flow figcaption { margin-bottom: 10px; color: var(--text-muted); font-size: .8rem; font-weight: 600; }
+.fasoo-server-flow ol { list-style: none; padding: 0; margin: 0; }
+.fasoo-server-flow li { position: relative; display: flex; flex-wrap: wrap; align-items: center; justify-content: center; gap: 4px 8px; padding: 6px 8px; border-radius: 6px; background: var(--bg-soft); color: var(--text); font-size: .82rem; line-height: 1.5; text-align: center; }
+.fasoo-server-flow li + li { margin-top: 18px; }
+.fasoo-server-flow li + li::before { content: "↓"; position: absolute; top: -18px; left: 50%; transform: translateX(-50%); line-height: 18px; color: var(--text-muted); }
+.fasoo-server-flow li strong { font-weight: 600; }
+.fasoo-server-flow li span { color: var(--text-muted); }
 </style>
 </head>
 <body>
@@ -228,7 +238,7 @@
             <div class="project-head"><h3>비틀웍스</h3></div>
             <p class="experience-service"><strong>러너스하이</strong> · AI 학습보조 서비스</p>
             <p class="item-role">서비스 개발 및 운영</p>
-            <p>실제 운영 중인 교육 서비스에서 AI 기능의 처리 속도와 안정성을 개선했습니다.</p>
+            <p>실제 운영 중인 러너스하이 서비스의 AI 기능 개선과 운영 업무를 수행하며 처리 속도와 안정성을 개선했습니다. 별도로 진행한 기업 연계 캡스톤 프로젝트에서는 서버 인프라 구축을 담당했습니다.</p>
             <div class="experience-metrics">
               <div><span>Gemini API 호출</span><strong>3회 → 1회</strong></div>
               <div><span>생성 대기 시간</span><strong>2분 이상 → 1분 이내</strong></div>
@@ -268,7 +278,7 @@
                 <h3>러너스하이 서버 구축 (기업 연계 캡스톤)</h3>
               </div>
               <span class="item-date">2026.09 — 진행중</span>
-              <p>비틀웍스의 AI 학습보조 서비스 ‘러너스하이’를 기업 연계 캡스톤으로 개발하고 있습니다. 위 실무 경험과 같은 서비스이며, 이 프로젝트에서는 KT Cloud 기반 서버 구축과 기능 개발을 담당하고 있습니다.</p>
+              <p>기업 연계 캡스톤 프로젝트에서 러너스하이의 KT Cloud 기반 서버 환경을 직접 구축하고, 팀원들이 사용할 수 있도록 공유했습니다. 구축한 환경에서 NEIS 연동과 자동문 제어 기능을 개발하고 있습니다.</p>
               <ul class="detail-list">
                 <li>KT Cloud 가상 서버 생성 및 Linux 환경 구성, Nginx·PHP·MySQL 설치</li>
                 <li>서버에 웹 서비스 소스코드를 배포하고 도메인과 HTTPS 인증서 연결</li>
@@ -276,6 +286,17 @@
                 <li><strong>개발 중:</strong> NEIS 연동 및 자동문 제어 기능</li>
               </ul>
               <p class="project-tags">KT Cloud · Linux · Nginx · PHP · MySQL · DNS · HTTPS · SSH</p>
+              <figure class="fasoo-server-flow">
+                <figcaption>서버 구성</figcaption>
+                <ol>
+                  <li><strong>사용자 브라우저</strong></li>
+                  <li><strong>도메인 / HTTPS</strong></li>
+                  <li><strong>KT Cloud</strong><span>Linux 가상 서버</span></li>
+                  <li><strong>Nginx</strong><span>웹 서버</span></li>
+                  <li><strong>PHP</strong><span>애플리케이션 실행</span></li>
+                  <li><strong>MySQL</strong><span>데이터베이스</span></li>
+                </ol>
+              </figure>
             </div>
           </article>
 
