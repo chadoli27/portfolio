@@ -27,6 +27,18 @@
   .fasoo-intro-features { grid-template-columns: 1fr; gap: 22px; }
   .fasoo-intro-features svg { margin-bottom: 8px; }
 }
+
+/* Experience: reuse portfolio typography and color tokens. */
+.experience-card { padding: 26px; border: 1px solid var(--border); border-radius: var(--radius); background: var(--card-bg); }
+.experience-card .experience-service strong { color: var(--text); }
+.experience-metrics { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 14px; margin: 8px 0; }
+.experience-metrics > div { padding: 18px; background: var(--bg-soft); border-radius: var(--radius-sm); }
+.experience-metrics span { display: block; font-size: .82rem; color: var(--text-muted); margin-bottom: 6px; }
+.experience-metrics strong { display: block; font-size: clamp(1.2rem, 2vw, 1.6rem); color: var(--sage); line-height: 1.5; word-break: keep-all; }
+@media (max-width: 640px) {
+  .experience-card { padding: 20px; }
+  .experience-metrics { grid-template-columns: 1fr; }
+}
 </style>
 </head>
 <body>
@@ -42,6 +54,7 @@
       <li><a href="#skills">기술</a></li>
       <li><a href="#education">학력</a></li>
       <li><a href="#certifications">자격증</a></li>
+      <li><a href="#experience">경력</a></li>
       <li><a href="#projects">프로젝트</a></li>
       
       <li><a href="#activities">활동</a></li>
@@ -203,10 +216,38 @@
     </div>
   </section>
 
-  <section id="projects" class="section container">
+  <section id="experience" class="section container">
     <div class="section-grid">
       <div class="section-head">
         <span class="section-num">04</span>
+        <h2 class="section-title">경력</h2>
+      </div>
+      <div class="section-body">
+        <article class="project-card experience-card">
+          <div class="project-body">
+            <div class="project-head"><h3>비틀웍스</h3></div>
+            <p class="experience-service"><strong>러너스하이</strong> · AI 학습보조 서비스</p>
+            <p class="item-role">서비스 개발 및 운영</p>
+            <p>실제 운영 중인 교육 서비스에서 AI 기능의 처리 속도와 안정성을 개선했습니다.</p>
+            <div class="experience-metrics">
+              <div><span>Gemini API 호출</span><strong>3회 → 1회</strong></div>
+              <div><span>생성 대기 시간</span><strong>2분 이상 → 1분 이내</strong></div>
+            </div>
+            <ul class="detail-list">
+              <li>수행평가 AI가이드라인 Gemini API 호출을 3회에서 1회로 줄여 생성 대기 시간을 2분 이상에서 1분 이내로 단축</li>
+              <li>DB 조건부 UPDATE와 중복 실행 방지 로직을 통해 반복 요청으로 인한 중복 처리 방지</li>
+            </ul>
+            <p class="project-tags">PHP · MySQL · Gemini API</p>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section id="projects" class="section container">
+    <div class="section-grid">
+      <div class="section-head">
+        <span class="section-num">05</span>
         <h2 class="section-title">프로젝트</h2>
       </div>
       <div class="section-body">
@@ -315,7 +356,7 @@
   <section id="activities" class="section container">
     <div class="section-grid">
       <div class="section-head">
-        <span class="section-num">05</span>
+        <span class="section-num">06</span>
         <h2 class="section-title">활동</h2>
       </div>
       <div class="section-body">
@@ -345,7 +386,7 @@
   <section id="global" class="section container">
     <div class="section-grid">
       <div class="section-head">
-        <span class="section-num">06</span>
+        <span class="section-num">07</span>
         <h2 class="section-title">해외 경험</h2>
       </div>
       <div class="section-body">
