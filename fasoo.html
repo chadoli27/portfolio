@@ -43,12 +43,13 @@
 /* Scoped to the capstone architecture figure. */
 .fasoo-server-flow { margin: 4px 0 0; max-width: 360px; width: 100%; padding: 14px; border: 1px solid var(--border); border-radius: var(--radius-sm); background: var(--card-bg); }
 .fasoo-server-flow figcaption { margin-bottom: 10px; color: var(--text-muted); font-size: .8rem; font-weight: 600; }
-.fasoo-server-flow ol { list-style: none; padding: 0; margin: 0; }
-.fasoo-server-flow li { position: relative; display: flex; flex-wrap: wrap; align-items: center; justify-content: center; gap: 4px 8px; padding: 6px 8px; border-radius: 6px; background: var(--bg-soft); color: var(--text); font-size: .82rem; line-height: 1.5; text-align: center; }
-.fasoo-server-flow li + li { margin-top: 18px; }
-.fasoo-server-flow li + li::before { content: "↓"; position: absolute; top: -18px; left: 50%; transform: translateX(-50%); line-height: 18px; color: var(--text-muted); }
-.fasoo-server-flow li strong { font-weight: 600; }
-.fasoo-server-flow li span { color: var(--text-muted); }
+.fasoo-server-flow .server-node { display: flex; flex-wrap: wrap; align-items: center; justify-content: center; gap: 4px 8px; padding: 6px 8px; border-radius: 6px; background: var(--bg-soft); color: var(--text); font-size: .82rem; line-height: 1.5; text-align: center; }
+.fasoo-server-flow .server-node strong { font-weight: 600; }
+.fasoo-server-flow .server-node span { color: var(--text-muted); }
+.fasoo-server-flow .server-connection { display: flex; flex-direction: column; align-items: center; padding: 3px 0; color: var(--text-muted); font-size: .78rem; line-height: 18px; text-align: center; }
+.fasoo-server-flow .server-environment { padding: 14px; border: 1px solid var(--border); border-radius: var(--radius-sm); background: var(--bg-soft); }
+.fasoo-server-flow .server-environment-title { margin-bottom: 10px; font-size: .82rem; font-weight: 600; line-height: 1.5; text-align: center; color: var(--text); }
+.fasoo-server-flow .server-environment .server-node { background: var(--card-bg); }
 </style>
 </head>
 <body>
@@ -288,14 +289,16 @@
               <p class="project-tags">KT Cloud · Linux · Nginx · PHP · MySQL · DNS · HTTPS · SSH</p>
               <figure class="fasoo-server-flow">
                 <figcaption>서버 구성</figcaption>
-                <ol>
-                  <li><strong>사용자 브라우저</strong></li>
-                  <li><strong>도메인 / HTTPS</strong></li>
-                  <li><strong>KT Cloud</strong><span>Linux 가상 서버</span></li>
-                  <li><strong>Nginx</strong><span>웹 서버</span></li>
-                  <li><strong>PHP</strong><span>애플리케이션 실행</span></li>
-                  <li><strong>MySQL</strong><span>데이터베이스</span></li>
-                </ol>
+                <div class="server-node"><strong>사용자 브라우저</strong></div>
+                <div class="server-connection"><span>DNS 조회 · HTTPS 요청</span><span aria-hidden="true">↓</span></div>
+                <div class="server-environment">
+                  <div class="server-environment-title">KT Cloud · Linux 가상 서버</div>
+                  <div class="server-node"><strong>Nginx</strong><span>웹 서버</span></div>
+                  <div class="server-connection" aria-label="Nginx에서 PHP로 요청 처리">↓</div>
+                  <div class="server-node"><strong>PHP</strong><span>애플리케이션 실행</span></div>
+                  <div class="server-connection"><span aria-label="양방향 연결">↕</span><span>SQL 요청 · 결과 반환</span></div>
+                  <div class="server-node"><strong>MySQL</strong><span>데이터베이스</span></div>
+                </div>
               </figure>
             </div>
           </article>
