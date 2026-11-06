@@ -619,3 +619,7 @@ h1, h2, h3 {
 
 .radio-thumb { height: auto; aspect-ratio: 1; align-self: flex-start; }
 .radio-thumb img { object-fit: contain; }
+
+.career-project { margin-top: 24px; }
+.career-project h4 { margin: 0 0 8px; font-size: 1rem; }
+.career-project .project-tags { margin: 0 0 10px; }
