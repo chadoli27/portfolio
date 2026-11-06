@@ -610,3 +610,12 @@ h1, h2, h3 {
 
   .site-footer { padding: 24px 20px; }
 }
+
+/* Explicit per-project stack labels and wrapping technology tags. */
+.project-stack { margin-top: 4px; }
+.project-stack h4 { margin: 0 0 8px; font-size: .8rem; color: var(--text-muted); }
+.project-stack-tags { display: flex; flex-wrap: wrap; gap: 7px; list-style: none; margin: 0; padding: 0; }
+.project-stack-tags li { padding: 4px 10px; border: 1px solid var(--border); border-radius: 6px; background: var(--bg-soft); font-size: .8rem; font-weight: 600; line-height: 1.5; }
+
+.radio-thumb { display: grid; place-items: center; color: var(--sage); }
+.radio-thumb svg { width: 100%; height: 100%; }
